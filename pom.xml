@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>PracticalTest</artifactId>
+    <groupId>phuc</groupId>
+    <artifactId>JSP-MVC</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>PracticalTest</name>
+    <name>JSP-MVC</name>
     <packaging>war</packaging>
 
     <properties>
@@ -18,24 +18,14 @@
     </properties>
 
     <dependencies>
-
         <dependency>
-            <groupId>jakarta.servlet.jsp.jstl</groupId>
-            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>5.0.0</version>
+            <scope>provided</scope>
         </dependency>
 
-        <!--        <dependency>-->
-<!--            <groupId>org.glassfish.web</groupId>-->
-<!--            <artifactId>jakarta.servlet.jsp.jstl</artifactId>-->
-<!--            <version>3.0.1</version>-->
-<!--        </dependency>-->
+        <!--***************************** Library *****************************-->
 
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
@@ -44,12 +34,19 @@
             <version>8.0.32</version>
         </dependency>
 
+
         <dependency>
-            <groupId>jakarta.servlet</groupId>
-            <artifactId>jakarta.servlet-api</artifactId>
-            <version>5.0.0</version>
-            <scope>provided</scope>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>3.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
