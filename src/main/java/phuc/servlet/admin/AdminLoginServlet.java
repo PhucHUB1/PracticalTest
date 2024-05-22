@@ -1,6 +1,5 @@
 package phuc.servlet.admin;
 
-import phuc.entity.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -23,7 +22,7 @@ public class AdminLoginServlet extends HttpServlet {
 
             if ("admin@gmail.com".equals(email) && "admin".equals(password)) {
                 // Đăng nhập thành công -> Chuyền về home
-                session.setAttribute("adminObj", new User());
+                session.setAttribute("adminObj", 'a');
                 resp.sendRedirect("index.jsp");
             } else {
                 session.setAttribute("errorMsg", "Invalid Username or Password.");

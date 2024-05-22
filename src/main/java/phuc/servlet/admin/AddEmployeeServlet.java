@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@WebServlet("/addEmployee")
+@WebServlet(name = "AddEmployee",urlPatterns = ("/addEmployee"))
 public class AddEmployeeServlet extends HttpServlet {
 
     @Override
